@@ -28,22 +28,23 @@ const deleteUser = async (id) => {
       <h1>User List</h1>
 
       {users.map((user) => (
-        <div key={user.id}>
+        <div className="user-card" key={user.id}>
           <h3>{user.name}</h3>
           <p>{user.email}</p>
           <p>{user.phone}</p>
 
-          <button
-  onClick={() =>
-    navigate("/edit-user", { state: { user } })
-  }
->
-  Edit
-</button>
-          <br /><br />
-          <button onClick={() => deleteUser(user.id)}>Delete</button>
+        <div className="button-group">
+  <button
+    onClick={() => navigate("/edit-user", { state: { user } })}
+  >
+    Edit
+  </button>
 
-          <hr />
+  <button onClick={() => deleteUser(user.id)}>
+    Delete
+  </button>
+</div>
+
         </div>
       ))}
     </div>
