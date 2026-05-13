@@ -74,7 +74,7 @@ app.delete("/users/:id", (req, res) => {
     });
 });
 app.post("/login", (req, res) => {
-    console.log("Signup route hit");
+    console.log("Login route hit");
     console.log(req.body);
     const { email, password } = req.body;
 
