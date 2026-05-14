@@ -19,18 +19,15 @@ A full-stack user management system built with React, Node.js, Express, and MySQ
 ## Installation
 
 ### Backend
-'''bash
-cd backend
-npm install
+cd backend,
+npm install,
 node server.js
-'''
 
 ### Frontend
-'''bash
-cd frontend
-npm install
+cd frontend,
+npm install,
 npm start
-'''
+
 
 ## Database Setup
 
